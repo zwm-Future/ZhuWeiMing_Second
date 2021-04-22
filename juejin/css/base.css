@@ -1,0 +1,99 @@
+/* 把内外边距清零 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?octf2y');
+    src:  url('fonts/icomoon.eot?octf2y#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?octf2y') format('truetype'),
+      url('fonts/icomoon.woff?octf2y') format('woff'),
+      url('fonts/icomoon.svg?octf2y#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+    color: #bebebe;
+    font-size: 8px;
+    font-style: normal;
+}
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+a {
+    color: #909090;
+    text-decoration: none;
+}
+a:hover {
+    color: #007fff;
+}
+img {
+    width: auto;
+    height: auto;
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: sub;
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer;
+    border-radius: 2px;
+    color: #fff;
+}
+
+
+
+button,
+input {
+    /*去掉默认有灰色边框*/
+    border: 0; 
+    outline: none;
+}
+input[type=search]::-webkit-search-cancel-button{
+    /* 去除叉号 */
+    -webkit-appearance: none;
+}
+body {
+    min-width: 960px;
+    background-color: #f4f5f5;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #333;
+}
+
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.block {
+    display: block !important;
+}
+
+.hidden {
+    display:none !important;
+}
+.shadow {
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+}
+.flex {
+    display: flex;
+}
+.icon {
+    font-family: 'iconfont';
+}
