@@ -51,10 +51,23 @@ button {
 
 
 button,
-input {
+input,
+textarea {
     /*去掉默认有灰色边框*/
     border: 0; 
     outline: none;
+}
+button {
+    appearance: none;
+    padding: 6px 15.6px;
+    background-color: #007fff;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    transition: background-color .2s,color .2s;
+}
+textarea {
+    resize: none;
 }
 input[type=search]::-webkit-search-cancel-button{
     /* 去除叉号 */
@@ -96,4 +109,7 @@ body {
 }
 .icon {
     font-family: 'iconfont';
+}
+.current {
+    color:#007FFF;
 }
